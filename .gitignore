@@ -37,3 +37,6 @@ out/
 .vscode/
 
 /terraform/.terraform/
+/terraform/example/
+/terraform/local-file-with-vars/example/
+/terraform/local-file-with-vars/.terraform.lock.hcl
