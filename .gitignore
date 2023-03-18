@@ -40,3 +40,5 @@ out/
 /terraform/example/
 /terraform/local-file-with-vars/example/
 /terraform/local-file-with-vars/.terraform.lock.hcl
+/terraform/aws-localstack/.terraform.lock.hcl
+/terraform/aws-localstack/.terraform/
