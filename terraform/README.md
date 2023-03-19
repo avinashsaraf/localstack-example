@@ -13,4 +13,10 @@ By default, terraform reads the variable values from `terraform.tfvars`. But if 
 
 ***Note**: The S3 buckets are non-persistent in the free version of localstack. So the state file gets deleted when the localstack container restarts. Hence the
 backend section in main.tf is commented out. To test the remote state, uncomment the section and run `terraform init` and then `terraform apply` command. Verify
-the file created in the S3 bucket.* 
+the file created in the S3 bucket.*
+
+## Terraform EC2
+
+Go through aws-ec2.tf terraform file how to configure ec2 using terraform<p>
+_**Note**: EC2 instance in localstack are dummy instances, so it won't be available for ssh and all. It is suitable for testing of terraform apply/destroy use
+case on ec2._
