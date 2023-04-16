@@ -1,12 +1,17 @@
 ## Start localstack
 
-Make sure docker and docker-compose is installed. To run the localstack docker image, go to the docker folder and run the command: <br>
-`docker compose up -d`
+Make sure docker and docker-compose is installed. To run the localstack docker image, go to the docker folder in this
+repository and run the command: <br>`docker compose up -d`
 
-> ### Pre-requisite before using AWS services:<br>
->Run aws configure to create some credentials. Localstack requires that these details are present, but doesn't actually validate them.
+> ### If `docker compose` does not work<br>
+> Verify that the colima daemon is running `colima status/start`.<p>
+> Ensure docker-compose softlink is present in ~/.docker/cli-plugins. Create folder if not present.<br>`mkdir -p ~/.docker/cli-plugins/docker-compose`<p>
+> Create softlink if not present.<br>`ln -sfn $(brew --prefix)/opt/docker-compose/bin/docker-compose ~/.docker/cli-plugins/docker-compose`<br>
 
-For testing purpose created *test-profile* using `aws configure` command.
+> ### Pre-requisite for using localstack services:<br>
+>Run `aws configure` command to create localstack credentials. Localstack requires that these credentials are present, but it does not validates them.
+
+For testing purpose created *test-profile* using `aws configure --profile test-profile` command.
 
 ## S3 examples using AWS CLI
 

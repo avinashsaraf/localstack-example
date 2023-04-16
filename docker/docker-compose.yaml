@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   localstack:
-    image: localstack/localstack:latest
+    image: localstack/localstack:2.0.1
     container_name: localstack
     environment:
       - SERVICES=sqs,sns,s3
