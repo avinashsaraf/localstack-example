@@ -26,3 +26,10 @@ For testing purpose created *test-profile* using `aws configure --profile test-p
 ### Copy file in s3 bucket
 
 `aws --profile test-profile --endpoint-url=http://localhost:4566 s3 cp <local-file> s3://demo-bucket`
+
+## Troubleshooting GIT push
+
+After adding GIT SSH key if there is this error then you need to add the Host mapping with Identity file in the
+.ssh/config file.<p>
+`git@github.com: Permission denied (publickey). fatal: Could not read from remote repository.
+`
